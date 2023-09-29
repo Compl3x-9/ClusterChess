@@ -1,0 +1,2 @@
+model_checkpoint_path: "fpos2vec_v1"
+all_model_checkpoint_paths: "fpos2vec_v1"
