@@ -362,28 +362,6 @@ while True:
         pos2vec2.save(nn.nn_pos2vec2)
         print("Listo")
 
-    if(option == "13"):
-        import nn_functions as nn
-
-        fen1 = input("first FEN: ")
-        fen2 = input("second FEN: ")
-
-        deepchess = nn.load_model_original_deepchess()
-        out = nn.one_deepchess(deepchess, fen1, fen2)
-
-        print("El output es:\n",out)
-
-    if(option == "14"):
-        import nn_functions as nn
-
-        fen = input("FEN: ")
-        move = input("move: ")
-
-        mov2vec = nn.load_model_mov2vec()
-        out = nn.one_mov2vec(mov2vec, fen, move)
-
-        print("El output es:\n",out)
-
     if(option == "15"):
         print("Indique qué archivo de datos quiere clasificar")
         db_fn = askopenfilename()
